@@ -2,6 +2,7 @@ package org.northernjay.msscbeerservice.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
+import org.northernjay.msscbeerservice.bootstraps.BeerLoader;
 import org.northernjay.msscbeerservice.services.BeerService;
 import org.northernjay.msscbeerservice.web.model.BeerDto;
 import org.northernjay.msscbeerservice.web.model.BeerStyleEnum;
@@ -75,7 +76,7 @@ class BeerControllerTest {
                 .beerName("My Beer")
                 .beerStyle(BeerStyleEnum.ALE)
                 .price(new BigDecimal("2.99"))
-                .upc(122132132L)
+                .upc(BeerLoader.BEER_1_UPC)
                 .build();
     }
 }
