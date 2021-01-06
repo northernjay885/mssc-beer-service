@@ -17,6 +17,7 @@ public class BeerController {
 
     private final BeerService beerService;
 
+
     @GetMapping("/{beerId}")
     @ResponseStatus(value = HttpStatus.OK)
     public BeerDto getBeerById(@PathVariable UUID beerId) {

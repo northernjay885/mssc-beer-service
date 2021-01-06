@@ -10,8 +10,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
-@RequiredArgsConstructor
 @Service
+@RequiredArgsConstructor
 public class BeerServiceImpl implements BeerService {
 
     private final BeerRepository beerRepository;
