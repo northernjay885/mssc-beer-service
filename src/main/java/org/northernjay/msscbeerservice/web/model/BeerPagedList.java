@@ -11,7 +11,7 @@ import java.util.List;
 
 public class BeerPagedList extends PageImpl<BeerDto> {
 
-   @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
+   @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)//why
    public BeerPagedList(@JsonProperty("content") List<BeerDto> content,
                         @JsonProperty("number") int number,
                         @JsonProperty("size") int size,
