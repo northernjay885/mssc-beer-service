@@ -51,6 +51,12 @@ public class BeerController {
         return beerService.getById(beerId, showInventoryOnHand);
     }
 
+    @GetMapping("/beerUpc/{upc}")
+    @ResponseStatus(value = HttpStatus.OK)
+    public BeerDto getBeerByUpc(@PathVariable String upc) {
+        return beerService.getByUpc(upc);
+    }
+
     @PostMapping
     @ResponseStatus(value = HttpStatus.CREATED)
     public BeerDto saveNewBeer(@Validated @RequestBody BeerDto beerDto) {

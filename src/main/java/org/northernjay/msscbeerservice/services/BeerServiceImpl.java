@@ -93,4 +93,11 @@ public class BeerServiceImpl implements BeerService {
 
         return beerPagedList;
     }
+
+    @Cacheable(cacheNames = "beerUpc", key = "#upc")
+    @Override
+    public BeerDto getByUpc(String upc) {
+        System.out.println("Call from database");
+        return beerMapper.beerToBeerDto(beerRepository.findByUpc(upc));
+    }
 }
