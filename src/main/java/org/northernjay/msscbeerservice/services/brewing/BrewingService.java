@@ -1,4 +1,4 @@
-package org.northernjay.msscbeerservice.services;
+package org.northernjay.msscbeerservice.services.brewing;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -6,6 +6,7 @@ import org.northernjay.msscbeerservice.config.JmsConfig;
 import org.northernjay.msscbeerservice.domain.Beer;
 import org.northernjay.msscbeerservice.events.BrewBeerEvent;
 import org.northernjay.msscbeerservice.repositories.BeerRepository;
+import org.northernjay.msscbeerservice.services.BeerInventoryService;
 import org.northernjay.msscbeerservice.web.mappers.BeerMapper;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -33,7 +34,7 @@ public class BrewingService {
             log.debug("Min Onhand is: " + beer.getMinOnHand());
             log.debug("Inventory is: " + invQOH);
 
-            if (beer.getMinOnHand() >= invQOH) {
+            if (invQOH <= beer.getMinOnHand()) {
                 jmsTemplate.convertAndSend(JmsConfig.BREWING_REQUEST_QUEUE, new BrewBeerEvent(beerMapper.beerToBeerDto(beer)));
             }
         });
