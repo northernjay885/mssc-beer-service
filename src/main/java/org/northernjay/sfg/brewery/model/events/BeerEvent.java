@@ -1,11 +1,11 @@
-package org.northernjay.msscbeerservice.events;
+package org.northernjay.sfg.brewery.model.events;
 
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.northernjay.msscbeerservice.web.model.BeerDto;
+import org.northernjay.sfg.brewery.model.BeerDto;
 
 import java.io.Serializable;
 

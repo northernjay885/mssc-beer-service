@@ -2,7 +2,7 @@ package org.northernjay.msscbeerservice.web.mappers;
 
 import org.northernjay.msscbeerservice.domain.Beer;
 import org.northernjay.msscbeerservice.services.BeerInventoryService;
-import org.northernjay.msscbeerservice.web.model.BeerDto;
+import org.northernjay.sfg.brewery.model.BeerDto;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public abstract class BeerMapperDecorator implements BeerMapper {

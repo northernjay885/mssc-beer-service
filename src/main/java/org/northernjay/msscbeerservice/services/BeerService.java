@@ -1,9 +1,9 @@
 package org.northernjay.msscbeerservice.services;
 
 
-import org.northernjay.msscbeerservice.web.model.BeerDto;
-import org.northernjay.msscbeerservice.web.model.BeerPagedList;
-import org.northernjay.msscbeerservice.web.model.BeerStyleEnum;
+import org.northernjay.sfg.brewery.model.BeerDto;
+import org.northernjay.sfg.brewery.model.BeerPagedList;
+import org.northernjay.sfg.brewery.model.BeerStyleEnum;
 import org.springframework.data.domain.PageRequest;
 
 import java.util.UUID;

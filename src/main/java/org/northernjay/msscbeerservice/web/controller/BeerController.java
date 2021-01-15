@@ -3,9 +3,9 @@ package org.northernjay.msscbeerservice.web.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.northernjay.msscbeerservice.services.BeerService;
-import org.northernjay.msscbeerservice.web.model.BeerDto;
-import org.northernjay.msscbeerservice.web.model.BeerPagedList;
-import org.northernjay.msscbeerservice.web.model.BeerStyleEnum;
+import org.northernjay.sfg.brewery.model.BeerDto;
+import org.northernjay.sfg.brewery.model.BeerPagedList;
+import org.northernjay.sfg.brewery.model.BeerStyleEnum;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

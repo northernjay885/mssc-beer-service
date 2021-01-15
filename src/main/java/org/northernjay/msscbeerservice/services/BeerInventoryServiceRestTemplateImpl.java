@@ -1,7 +1,7 @@
 package org.northernjay.msscbeerservice.services;
 
 import lombok.extern.slf4j.Slf4j;
-import org.northernjay.msscbeerservice.web.model.BeerInventoryDto;
+import org.northernjay.sfg.brewery.model.BeerInventoryDto;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.core.ParameterizedTypeReference;

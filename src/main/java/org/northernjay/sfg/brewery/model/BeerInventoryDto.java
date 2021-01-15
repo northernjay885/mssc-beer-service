@@ -1,4 +1,4 @@
-package org.northernjay.msscbeerservice.web.model;
+package org.northernjay.sfg.brewery.model;
 
 
 import lombok.AllArgsConstructor;

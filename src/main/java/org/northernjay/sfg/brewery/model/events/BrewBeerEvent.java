@@ -1,7 +1,7 @@
-package org.northernjay.msscbeerservice.events;
+package org.northernjay.sfg.brewery.model.events;
 
 import lombok.NoArgsConstructor;
-import org.northernjay.msscbeerservice.web.model.BeerDto;
+import org.northernjay.sfg.brewery.model.BeerDto;
 
 @NoArgsConstructor
 public class BrewBeerEvent extends BeerEvent {
