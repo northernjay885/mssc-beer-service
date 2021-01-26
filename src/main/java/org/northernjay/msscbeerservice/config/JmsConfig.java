@@ -8,6 +8,9 @@ import org.springframework.jms.support.converter.MappingJackson2MessageConverter
 import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.jms.support.converter.MessageType;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Configuration
 public class JmsConfig {
 
@@ -19,6 +22,7 @@ public class JmsConfig {
     @Bean
     public MessageConverter messageConverter(ObjectMapper mapper) {
         MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
+
         converter.setTargetType(MessageType.TEXT);
         converter.setTypeIdPropertyName("_type");
         converter.setObjectMapper(mapper);

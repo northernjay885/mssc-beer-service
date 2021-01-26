@@ -31,6 +31,7 @@ public class BeerLoader implements CommandLineRunner {
     }
 
     private void loadBeerObjects() {
+        System.out.println("begin loading data......");
         if (beerRepository.count() == 0) {
 
             beerRepository.save(Beer.builder()
