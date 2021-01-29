@@ -3,6 +3,7 @@ package org.northernjay.msscbeerservice.services;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.northernjay.msscbeerservice.services.inventory.BeerInventoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 

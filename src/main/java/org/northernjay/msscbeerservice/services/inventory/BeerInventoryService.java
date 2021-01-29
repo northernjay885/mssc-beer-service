@@ -1,4 +1,4 @@
-package org.northernjay.msscbeerservice.services;
+package org.northernjay.msscbeerservice.services.inventory;
 
 import java.util.UUID;
 

@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.northernjay.msscbeerservice.config.JmsConfig;
 import org.northernjay.msscbeerservice.domain.Beer;
 import org.northernjay.msscbeerservice.repositories.BeerRepository;
-import org.northernjay.msscbeerservice.services.BeerInventoryService;
+import org.northernjay.msscbeerservice.services.inventory.BeerInventoryService;
 import org.northernjay.msscbeerservice.web.mappers.BeerMapper;
 import org.northernjay.sfg.brewery.model.events.BrewBeerEvent;
 import org.springframework.jms.core.JmsTemplate;
